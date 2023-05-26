@@ -12,6 +12,7 @@
 		CEDAC25B2A210EDA008C8DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */; };
 		CEDAC25E2A210EDA008C8DA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC25D2A210EDA008C8DA8 /* Preview Assets.xcassets */; };
 		CEDAC2652A210F11008C8DA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC2642A210F11008C8DA8 /* .gitignore */; };
+		CEDAC26A2A21484E008C8DA8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC2692A21484E008C8DA8 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDAC25D2A210EDA008C8DA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEDAC2642A210F11008C8DA8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CEDAC2692A21484E008C8DA8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		CEDAC24A2A210ED7008C8DA8 = {
 			isa = PBXGroup;
 			children = (
+				CEDAC2692A21484E008C8DA8 /* .swiftlint.yml */,
 				CEDAC2642A210F11008C8DA8 /* .gitignore */,
 				CEDAC2552A210ED7008C8DA8 /* Montra */,
 				CEDAC2542A210ED7008C8DA8 /* Products */,
@@ -80,6 +83,7 @@
 				CEDAC24F2A210ED7008C8DA8 /* Sources */,
 				CEDAC2502A210ED7008C8DA8 /* Frameworks */,
 				CEDAC2512A210ED7008C8DA8 /* Resources */,
+				CEDAC2662A211E5E008C8DA8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDAC26A2A21484E008C8DA8 /* .swiftlint.yml in Resources */,
 				CEDAC25E2A210EDA008C8DA8 /* Preview Assets.xcassets in Resources */,
 				CEDAC2652A210F11008C8DA8 /* .gitignore in Resources */,
 				CEDAC25B2A210EDA008C8DA8 /* Assets.xcassets in Resources */,
@@ -135,6 +140,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEDAC2662A211E5E008C8DA8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEDAC24F2A210ED7008C8DA8 /* Sources */ = {
