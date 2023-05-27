@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2A4F052A220CC10039AADD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F042A220CC10039AADD /* Launch Screen.storyboard */; };
+		CE2A4F0C2A221DFA0039AADD /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F092A221DFA0039AADD /* Inter-Bold.ttf */; };
+		CE2A4F0D2A221DFA0039AADD /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F0A2A221DFA0039AADD /* Inter-Medium.ttf */; };
+		CE2A4F0E2A221DFA0039AADD /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F0B2A221DFA0039AADD /* Inter-SemiBold.ttf */; };
 		CEDAC2572A210ED7008C8DA8 /* MontraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC2562A210ED7008C8DA8 /* MontraApp.swift */; };
-		CEDAC2592A210ED7008C8DA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC2582A210ED7008C8DA8 /* ContentView.swift */; };
 		CEDAC25B2A210EDA008C8DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */; };
 		CEDAC25E2A210EDA008C8DA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC25D2A210EDA008C8DA8 /* Preview Assets.xcassets */; };
 		CEDAC2652A210F11008C8DA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC2642A210F11008C8DA8 /* .gitignore */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2A4F042A220CC10039AADD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CE2A4F092A221DFA0039AADD /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		CE2A4F0A2A221DFA0039AADD /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		CE2A4F0B2A221DFA0039AADD /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		CEDAC2532A210ED7008C8DA8 /* Montra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDAC2562A210ED7008C8DA8 /* MontraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontraApp.swift; sourceTree = "<group>"; };
-		CEDAC2582A210ED7008C8DA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDAC25D2A210EDA008C8DA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEDAC2642A210F11008C8DA8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -36,11 +42,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2A4EFF2A2206380039AADD /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		CE2A4F002A2206490039AADD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A4EFF2A2206380039AADD /* Welcome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CE2A4F082A221DED0039AADD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A4F092A221DFA0039AADD /* Inter-Bold.ttf */,
+				CE2A4F0A2A221DFA0039AADD /* Inter-Medium.ttf */,
+				CE2A4F0B2A221DFA0039AADD /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CEDAC24A2A210ED7008C8DA8 = {
 			isa = PBXGroup;
 			children = (
 				CEDAC2692A21484E008C8DA8 /* .swiftlint.yml */,
 				CEDAC2642A210F11008C8DA8 /* .gitignore */,
+				CE2A4F002A2206490039AADD /* Features */,
 				CEDAC2552A210ED7008C8DA8 /* Montra */,
 				CEDAC2542A210ED7008C8DA8 /* Products */,
 			);
@@ -57,9 +89,10 @@
 		CEDAC2552A210ED7008C8DA8 /* Montra */ = {
 			isa = PBXGroup;
 			children = (
+				CE2A4F082A221DED0039AADD /* Fonts */,
 				CEDAC2562A210ED7008C8DA8 /* MontraApp.swift */,
-				CEDAC2582A210ED7008C8DA8 /* ContentView.swift */,
 				CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */,
+				CE2A4F042A220CC10039AADD /* Launch Screen.storyboard */,
 				CEDAC25C2A210EDA008C8DA8 /* Preview Content */,
 			);
 			path = Montra;
@@ -132,9 +165,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2A4F0C2A221DFA0039AADD /* Inter-Bold.ttf in Resources */,
 				CEDAC26A2A21484E008C8DA8 /* .swiftlint.yml in Resources */,
 				CEDAC25E2A210EDA008C8DA8 /* Preview Assets.xcassets in Resources */,
 				CEDAC2652A210F11008C8DA8 /* .gitignore in Resources */,
+				CE2A4F0E2A221DFA0039AADD /* Inter-SemiBold.ttf in Resources */,
+				CE2A4F0D2A221DFA0039AADD /* Inter-Medium.ttf in Resources */,
+				CE2A4F052A220CC10039AADD /* Launch Screen.storyboard in Resources */,
 				CEDAC25B2A210EDA008C8DA8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDAC2592A210ED7008C8DA8 /* ContentView.swift in Sources */,
 				CEDAC2572A210ED7008C8DA8 /* MontraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,9 +334,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Montra/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Montra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,9 +363,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Montra/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Montra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
