@@ -11,6 +11,11 @@
 		CE2A4F0C2A221DFA0039AADD /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F092A221DFA0039AADD /* Inter-Bold.ttf */; };
 		CE2A4F0D2A221DFA0039AADD /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F0A2A221DFA0039AADD /* Inter-Medium.ttf */; };
 		CE2A4F0E2A221DFA0039AADD /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE2A4F0B2A221DFA0039AADD /* Inter-SemiBold.ttf */; };
+		CE2A4F102A2223F20039AADD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A4F0F2A2223F20039AADD /* WelcomeView.swift */; };
+		CE2A4F132A22287D0039AADD /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A4F122A22287D0039AADD /* Color+Extension.swift */; };
+		CE2A4F152A2232420039AADD /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A4F142A2232420039AADD /* Font+Extension.swift */; };
+		CE2A4F172A223C330039AADD /* WelcomeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A4F162A223C330039AADD /* WelcomeSliderView.swift */; };
+		CE67C9CC2A2B4D2E00C7793F /* WelcomeSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67C9CB2A2B4D2E00C7793F /* WelcomeSliderViewModel.swift */; };
 		CEDAC2572A210ED7008C8DA8 /* MontraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC2562A210ED7008C8DA8 /* MontraApp.swift */; };
 		CEDAC25B2A210EDA008C8DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */; };
 		CEDAC25E2A210EDA008C8DA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC25D2A210EDA008C8DA8 /* Preview Assets.xcassets */; };
@@ -23,6 +28,11 @@
 		CE2A4F092A221DFA0039AADD /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		CE2A4F0A2A221DFA0039AADD /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		CE2A4F0B2A221DFA0039AADD /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE2A4F0F2A2223F20039AADD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		CE2A4F122A22287D0039AADD /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		CE2A4F142A2232420039AADD /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		CE2A4F162A223C330039AADD /* WelcomeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSliderView.swift; sourceTree = "<group>"; };
+		CE67C9CB2A2B4D2E00C7793F /* WelcomeSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSliderViewModel.swift; sourceTree = "<group>"; };
 		CEDAC2532A210ED7008C8DA8 /* Montra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDAC2562A210ED7008C8DA8 /* MontraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontraApp.swift; sourceTree = "<group>"; };
 		CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +55,8 @@
 		CE2A4EFF2A2206380039AADD /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				CE67C9CA2A2B4D1800C7793F /* WelcomeSlider */,
+				CE2A4F0F2A2223F20039AADD /* WelcomeView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -65,6 +77,24 @@
 				CE2A4F0B2A221DFA0039AADD /* Inter-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CE2A4F112A2228660039AADD /* CoreExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A4F122A22287D0039AADD /* Color+Extension.swift */,
+				CE2A4F142A2232420039AADD /* Font+Extension.swift */,
+			);
+			path = CoreExtensions;
+			sourceTree = "<group>";
+		};
+		CE67C9CA2A2B4D1800C7793F /* WelcomeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A4F162A223C330039AADD /* WelcomeSliderView.swift */,
+				CE67C9CB2A2B4D2E00C7793F /* WelcomeSliderViewModel.swift */,
+			);
+			path = WelcomeSlider;
 			sourceTree = "<group>";
 		};
 		CEDAC24A2A210ED7008C8DA8 = {
@@ -89,6 +119,7 @@
 		CEDAC2552A210ED7008C8DA8 /* Montra */ = {
 			isa = PBXGroup;
 			children = (
+				CE2A4F112A2228660039AADD /* CoreExtensions */,
 				CE2A4F082A221DED0039AADD /* Fonts */,
 				CEDAC2562A210ED7008C8DA8 /* MontraApp.swift */,
 				CEDAC25A2A210EDA008C8DA8 /* Assets.xcassets */,
@@ -194,7 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -203,7 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE67C9CC2A2B4D2E00C7793F /* WelcomeSliderViewModel.swift in Sources */,
 				CEDAC2572A210ED7008C8DA8 /* MontraApp.swift in Sources */,
+				CE2A4F172A223C330039AADD /* WelcomeSliderView.swift in Sources */,
+				CE2A4F132A22287D0039AADD /* Color+Extension.swift in Sources */,
+				CE2A4F152A2232420039AADD /* Font+Extension.swift in Sources */,
+				CE2A4F102A2223F20039AADD /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Montra/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Montra/Info.plist;
@@ -361,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Montra/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Montra/Info.plist;
