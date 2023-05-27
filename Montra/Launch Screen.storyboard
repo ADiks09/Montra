@@ -40,7 +40,7 @@
     </scenes>
     <resources>
         <namedColor name="violet100">
-            <color red="0.49803921568627452" green="0.23921568627450981" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.49799999594688416" green="0.23899999260902405" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
